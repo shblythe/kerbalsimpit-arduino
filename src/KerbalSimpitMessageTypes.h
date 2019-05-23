@@ -117,6 +117,9 @@ enum OutboundPackets {
       This channel delivers messages containing indicated airspeed and
       mach number for the active vessel. */
   AIRSPEED_MESSAGE = 27,
+
+  /** SAS autopilot mode */
+  AUTOPILOT_MESSAGE = 28
 };
 
 /** Inbound packets.
