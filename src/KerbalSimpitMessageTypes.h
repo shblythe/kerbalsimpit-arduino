@@ -203,16 +203,16 @@ enum TranslationAxes {
     The possible Autopilot (SAS) modes. This enum corresponds with
     VesselPilot.AutopilotMode in the KSP API. */
 enum AutopilotMode {
-  AP_STABILITYASSIST = 1,
-  AP_PROGRADE = 2,
-  AP_RETROGRADE = 3,
-  AP_NORMAL = 4,
-  AP_ANTINORMAL = 5,
-  AP_RADIALIN = 6,
-  AP_RADIALOUT = 7,
-  AP_TARGET = 8,
-  AP_ANTITARGET = 9,
-  AP_MANEUVER = 10
+  AP_STABILITYASSIST,
+  AP_PROGRADE,
+  AP_RETROGRADE,
+  AP_NORMAL,
+  AP_ANTINORMAL,
+  AP_RADIALIN,
+  AP_RADIALOUT,
+  AP_TARGET,
+  AP_ANTITARGET,
+  AP_MANEUVER
 };
 
 #endif
