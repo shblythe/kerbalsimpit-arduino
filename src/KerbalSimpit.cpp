@@ -14,7 +14,7 @@ bool KerbalSimpit::init()
     return false;
   }
   _outboundBuffer[0] = 0x00;
-  int i;
+  unsigned int i;
   for (i=0; i<sizeof(KERBALSIMPIT_VERSION); i++) {
     _outboundBuffer[i+1] = KERBALSIMPIT_VERSION[i];
   }
