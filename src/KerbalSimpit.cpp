@@ -72,6 +72,7 @@ void KerbalSimpit::send(byte messageType, byte msg[], byte msgSize)
 
 void KerbalSimpit::update()
 {
+  sendWatchdog();
   while (_serial->available()) {
     _readBuffer = _serial->read();
     switch (_receiveState) {

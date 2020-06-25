@@ -161,7 +161,9 @@ enum InboundPackets {
   /** Send SAS mode commands.
        The payload should be a single byte, possible SAS modes are listed
        in the AutopilotMode enum. */
-  SAS_MODE_MESSAGE = 20
+  SAS_MODE_MESSAGE = 20,
+  /** Send watchdog, if missed for 8 seconds all subscriptions are cancelled */
+  WATCHDOG_MESSAGE = 21
 };
 
 /** Action Group Indexes

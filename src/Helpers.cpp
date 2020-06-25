@@ -37,3 +37,8 @@ void KerbalSimpit::setSASMode(byte mode)
 {
   send(SAS_MODE_MESSAGE, &mode, 1);
 }
+
+void KerbalSimpit::sendWatchdog()
+{
+  send(WATCHDOG_MESSAGE,0,1);
+}

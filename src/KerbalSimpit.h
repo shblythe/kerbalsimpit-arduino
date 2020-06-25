@@ -117,6 +117,12 @@ class KerbalSimpit
       AutopilotMode enum.
   */
   void setSASMode(byte mode);
+  /** Send watchdog
+   *  Sends a watchdog message.  If this isn't sent for 8 seconds, the plugin will deregister all
+   *  message subscriptions, this is to allow an Arduino to recover on reset, which it can't do if
+   *  serial messages are flooding in.
+   */
+  void sendWatchdog();
 
  private:
   byte _readBuffer;
